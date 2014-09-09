@@ -1,4 +1,15 @@
+encoding: UTF-8
+timezone: Europe/Helsinki
+
+exclude:
+  - README.md
+
+permalink: pretty
+
+# GitHub defaults for Jekyll (can't override)
 safe: true
 lsi: false
 highlighter: pygments
 
+gems:
+  - jekyll-sitemap

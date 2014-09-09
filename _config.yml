@@ -16,3 +16,10 @@ highlighter: pygments
 
 gems:
   - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

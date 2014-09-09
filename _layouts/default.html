@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fi">
+    <head>
+        <meta charset="utf-8"/>
+        <title>{{ page.title }} &ndash; {{ site.title }}</title>
+        <meta property="og:title" content="{{ page.title }}"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="{{ site.github.url }}/{{ page.url }}"/>    
+        <meta property="og:site_name" content="{{ site.title }}"/>
+
+        <meta name="viewport" content="width=device-width"/>
+
+        <link rel="stylesheet" href="/stylesheets/default.css"/>
+    </head>
+    <body>
+        <header>
+            <hgroup>
+                <h1 id="site-title">{{ site.title }}</h1>
+                <h2 id="site-tagline">{{ site.tagline }}</h2>
+            </hgroup>
+        </header>
+
+        {{ content }}
+
+        <footer>
+            <p id="site-copyright">&copy; {{ site.title }} &middot; GPLv2 &middot; <a href="{{ site.github.repository_url }}">Fork on GitHub</a></p>
+        </footer>
+    </body>
+</html>

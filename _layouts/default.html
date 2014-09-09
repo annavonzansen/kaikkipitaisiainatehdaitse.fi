@@ -23,7 +23,8 @@
         {{ content }}
 
         <footer>
-            <p id="site-copyright">&copy; {{ site.title }} &middot; GPLv2 &middot; <a href="{{ site.github.repository_url }}">Fork on GitHub</a></p>
+            <p id="site-copyright">&copy; {{ site.title }} &middot; GPLv2 &middot; <a href="{{ site.github.repository_url }}">Fork on GitHub</a> &middot; Commit: {{ site.github.build_revision }}</p>
+            <p>Problems? Fix it! <code>git clone {{ site.github.clone_url }}</code></p>
         </footer>
     </body>
 </html>

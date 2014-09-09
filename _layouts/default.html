@@ -25,6 +25,7 @@
         {{ content }}
 
 
+        {% include comment.html %}
         <hr/>
         <footer>
             <p id="site-copyright">&copy; <a href="{{ site.github.url }}">{{ site.title }}</a> &middot; GPLv2 &middot; <a href="{{ site.github.repository_url }}">Fork on GitHub</a> &middot; Commit: {{ site.github.build_revision|truncate:9 }}</p>

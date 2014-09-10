@@ -5,6 +5,7 @@ author: Ville Korhonen
 ---
 
 # {{ page.title }}
+ > {{ page.description }}
 
 Ah, onnea, uusi asunto, uudet naapurit, uusi elämä. Ja sitten... muuttoilmoitus tehtävänä.
 

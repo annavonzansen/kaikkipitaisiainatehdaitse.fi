@@ -33,3 +33,9 @@ Ah, onnea, uusi asunto, uudet naapurit, uusi elämä. Ja sitten... muuttoilmoitu
  - tokeneille expiroitumispäivä: "tämä yritys saa noutaa tietojani 2 vuoden ajan, mutta sitten joutuvat pyytämään uuden luvan"
  - mahdollisuus rekisteröidä omiin tietoihin useita osoitteita ("lomaosoite", "kotiosoite", "joku muu"), ja voin valita näistä, mitä tietoja annan esimerkiksi tilaamalleni sanomalehdelle ("toimittakaa lomaosoitteeseni")
  - tärkein: vain yksi paikka, johon muutos tarvitsee tehdä
+
+
+## Lisää mahdollisuuksia
+ - jos palvelu haluaa vahvasti tunnistaa käyttäjänsä (estää häiriköinnin yms.), voisi olla tunnistatamakayttaja.vrk.fi, joka tunnistaa käyttäjän, ja palauttaa palvelulle uniikin ID:n, jonka avulla palvelu ei tiedä, että kuka käyttäjä on, mutta yhteistyössä VRK:n kanssa on mahdollista selvittää henkilöllisyys esim. väärinkäyttötapauksessa
+ - tällöin voit pysyä anonyyminä, mutta vahvasti tunnistautuneena...
+ - estettävä kuitenkin viranomaistietokanta, josta näkee kaikki käyttäjän sidokset

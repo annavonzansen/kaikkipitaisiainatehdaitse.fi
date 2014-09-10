@@ -1,5 +1,6 @@
 --
 title: Tietoa
+layout: default
 author: Ville Korhonen
 --
 

@@ -1,6 +1,7 @@
 ---
 ---
 $font-stack: Arial, Helvetica, sans-serif;
+$highlight_color: orange;
 
 body {
   font-family: $font-stack;
@@ -8,4 +9,6 @@ body {
   color: #000;
 }
 
-
+blockquote {
+  border-left: 3px solid $highlight_color;
+}

@@ -2,6 +2,7 @@
 ---
 $font-stack: Arial, Helvetica, sans-serif;
 $highlight_color: orange;
+$smallprint_size: 0.95em;
 
 body {
   font-family: $font-stack;
@@ -12,4 +13,8 @@ body {
 blockquote {
   border-left: 3px solid $highlight_color;
   padding-left: 1em;
+}
+
+footer {
+  font-size: $smallprint_size;
 }

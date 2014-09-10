@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/assets/default.css"/>
     </head>
     <body>
+        <div id="page">
         <header>
             <hgroup>
                 <h1 id="site-title"><a href="{{ site.github.url }}">{{ site.title }}</a></h1>
@@ -38,6 +39,7 @@
             <p id="site-copyright">&copy; <a href="{{ site.github.url }}">{{ site.title }}</a> &middot; GPLv2 &middot; <a href="{{ site.github.repository_url }}">Fork on GitHub</a> &middot; Commit: {{ site.github.build_revision|truncate:9 }}</p>
             <p>Ongelma? Korjaa se! <code>git clone {{ site.github.clone_url }}</code>, tai <a href="{{ site.github.issues_url }}">kerro, miten se pitäisi korjata</a></p>
         </footer>
+        </div>
         {% include analytics.html %}
     </body>
 </html>

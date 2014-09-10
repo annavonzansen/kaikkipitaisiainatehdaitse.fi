@@ -1,5 +1,6 @@
 ---
 title: Muuttoilmoitus
+description: Miten muuttoilmoituksen pitäisi toimia
 author: Ville Korhonen
 ---
 

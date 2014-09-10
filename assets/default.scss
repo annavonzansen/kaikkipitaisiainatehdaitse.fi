@@ -10,6 +10,10 @@ body {
   color: #000;
 }
 
+#page {
+  margin: 0.5em 1em 2em 1em;
+}
+
 blockquote {
   border-left: 3px solid $highlight_color;
   padding-left: 1em;

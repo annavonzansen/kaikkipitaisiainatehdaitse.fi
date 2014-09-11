@@ -1,9 +1,11 @@
 ---
 title: Muuttoilmoitus
+description: Miten muuttoilmoituksen pitäisi toimia
 author: Ville Korhonen
 ---
 
 # {{ page.title }}
+ > {{ page.description }}
 
 Ah, onnea, uusi asunto, uudet naapurit, uusi elämä. Ja sitten... muuttoilmoitus tehtävänä.
 
@@ -28,3 +30,12 @@ Ah, onnea, uusi asunto, uudet naapurit, uusi elämä. Ja sitten... muuttoilmoitu
  - mutta mahdollisuus kertoa viranomaisille, että olen jäsen X, Y, Z, ja näitä tietoja voisi käyttää esim. avustusjutuissa? (eli erilaisten julkisten tukien käyttöä seuratessa, ie. näkisi jotain jäsenmääriin liittyvää dataa?)
  - vois toimia siten, että vrk.fi/hallitsetietojani > voin luoda "tokenin", jolla on jotain oikeuksia ("hae postiosoite, hae puhelinnumero"), jonka voin antaa kenelle tahansa > tokenin haltija voi hakea ko. tietoja ihan milloin tahansa ; ja voin revokoida tokenin + pystyn tägäämään niitä miten itse tahdon ("tämän annoin Mikolle", "tätä käyttää työnantajani", "suosikkiyhdistykseni jäsenrekisteri") > voin pitää viranomaisilta salassa, että kenelle tietoja viedään, mutta homma hoituisi muuten automatisoidummin kuin nyt
  - samaan paikkaan historiatiedot: ketkä ovat hakeneet minun tietoni ja milloin?
+ - tokeneille expiroitumispäivä: "tämä yritys saa noutaa tietojani 2 vuoden ajan, mutta sitten joutuvat pyytämään uuden luvan"
+ - mahdollisuus rekisteröidä omiin tietoihin useita osoitteita ("lomaosoite", "kotiosoite", "joku muu"), ja voin valita näistä, mitä tietoja annan esimerkiksi tilaamalleni sanomalehdelle ("toimittakaa lomaosoitteeseni")
+ - tärkein: vain yksi paikka, johon muutos tarvitsee tehdä
+
+
+## Lisää mahdollisuuksia
+ - jos palvelu haluaa vahvasti tunnistaa käyttäjänsä (estää häiriköinnin yms.), voisi olla tunnistatamakayttaja.vrk.fi, joka tunnistaa käyttäjän, ja palauttaa palvelulle uniikin ID:n, jonka avulla palvelu ei tiedä, että kuka käyttäjä on, mutta yhteistyössä VRK:n kanssa on mahdollista selvittää henkilöllisyys esim. väärinkäyttötapauksessa
+ - tällöin voit pysyä anonyyminä, mutta vahvasti tunnistautuneena...
+ - estettävä kuitenkin viranomaistietokanta, josta näkee kaikki käyttäjän sidokset

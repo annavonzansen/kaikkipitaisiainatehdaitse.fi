@@ -4,15 +4,19 @@
         <meta charset="utf-8"/>
         <title>{{ page.title }} &ndash; {{ site.title }}</title>
         <meta property="og:title" content="{{ page.title }}"/>
+        {% if page.description %}
+        <meta property="og:description" content="{{ page.description }}"/>
+        {% endif %}
         <meta property="og:type" content="article"/>
-        <meta property="og:url" content="{{ site.github.url }}/{{ page.url }}"/>    
+        <meta property="og:url" content="{{ site.github.url }}{{ page.url }}"/>
         <meta property="og:site_name" content="{{ site.title }}"/>
 
         <meta name="viewport" content="width=device-width"/>
 
-        <link rel="stylesheet" href="/stylesheets/default.css"/>
+        <link rel="stylesheet" href="/assets/default.css"/>
     </head>
     <body>
+        <div id="page">
         <header>
             <hgroup>
                 <h1 id="site-title"><a href="{{ site.github.url }}">{{ site.title }}</a></h1>
@@ -26,13 +30,16 @@
 
         {{ content }}
 
+        {% include share.html %}
+        <hr/>
 
         {% include comment.html %}
         <hr/>
         <footer>
-            <p id="site-copyright">&copy; <a href="{{ site.github.url }}">{{ site.title }}</a> &middot; GPLv2 &middot; <a href="{{ site.github.repository_url }}">Fork on GitHub</a> &middot; Commit: {{ site.github.build_revision|truncate:9 }}</p>
+            <p id="site-copyright">&copy; <a href="{{ site.github.url }}">{{ site.title }}</a> &middot; GPLv2 &middot; <a href="{{ site.github.repository_url }}">Fork on GitHub</a> &middot; Commit: <code>{{ site.github.build_revision|truncate:9 }}</code> &middot; Site built at {{ site.time|date_to_xmlschema }}</p>
             <p>Ongelma? Korjaa se! <code>git clone {{ site.github.clone_url }}</code>, tai <a href="{{ site.github.issues_url }}">kerro, miten se pitäisi korjata</a></p>
         </footer>
+        </div>
         {% include analytics.html %}
     </body>
 </html>
